@@ -54,6 +54,9 @@ this.userFormData=this.fb.group({
 })
   }
 )}
+emptydata(){
+  alert("Fill The Data")
+}
 
   submit(){
     this.dataPassingService.postApiCall(this.endPoint,this.userFormData.value).subscribe(res=>{

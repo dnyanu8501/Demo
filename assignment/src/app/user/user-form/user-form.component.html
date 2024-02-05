@@ -2,7 +2,7 @@
 <div class="container">
     <button  class="backBtn" routerLink="/">Back</button>
     <div class="main">
-        <form [formGroup]="userFormData">
+        <form [formGroup]="userFormData" autocomplete="off">
         <h2>User Form</h2>
        <label>User Name</label>
        <input type="text" formControlName="name" placeholder="Enter  Name">
@@ -28,7 +28,7 @@
     
       <input  class="add" type="text" formControlName="suite" placeholder="Enter Suite">
       <br>
-      <br>
+     
       <input  class="add" type="text" formControlName="city" placeholder="Enter City">
     
       <input  class="add" type="text" formControlName="zipcode" placeholder="Enter zipcode">
@@ -36,11 +36,12 @@
       <!-- <span class="err" *ngIf="this.userFormData.get('address')?.errors?.['required'] && this.userFormData.get('address')?.touched">Required Address</span> -->
       <br>
       
-      <button class="btn" *ngIf="submitBtn" (click)="submit()">SUBMIT</button>
+      <button class="btn" *ngIf="submitBtn" [disabled]="!this.userFormData.valid">SUBMIT</button>
       <button class="btn" *ngIf="!submitBtn" (click)="update()">UPDATE</button>
        </div>
     </form>
     </div>
 </div>
+<!-- (click)="this.userFormData.valid ? submit(): 'emptydata()'" -->
 
 
