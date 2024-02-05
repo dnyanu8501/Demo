@@ -37,4 +37,10 @@ this.userListData=res
    this.router.navigateByUrl('/userForm')
     
   }
+  delete(id:any){
+    this.dataPassingService.deleteApiCall(this.endPoint,id).subscribe(res=>{
+      alert("Data Deleted Successfully! . . .")
+      this.getData()
+    })
+  }
 }

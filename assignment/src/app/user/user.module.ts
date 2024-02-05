@@ -8,7 +8,7 @@ import { UsersListComponent } from './users-list/users-list.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SearchPipe } from '../pipe/search.pipe';
-
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,9 @@ import { SearchPipe } from '../pipe/search.pipe';
     UserRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatIconModule
+   
   ]
 })
 export class UserModule { }

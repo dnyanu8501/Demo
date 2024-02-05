@@ -12,27 +12,49 @@ import { DataPassingService } from 'src/app/services/data-passing.service';
 export class UserFormComponent {
   endPoint='user'
   userFormData!:FormGroup
+  address1!:FormGroup
   editId:any
   editData:any
-  updateBtn:boolean=false
+  submitBtn:any=true
 constructor(private fb:FormBuilder ,public dataPassingService:DataPassingService,public router:Router){}
   ngOnInit(){
     this.editData=this.dataPassingService.editData
     this.editId=this.dataPassingService.id
-    if(this.dataPassingService.editData){
-      this.updateBtn=true
-    }
+    this.submitBtn=this.dataPassingService.submitBtn
+    // if(this.dataPassingService.editData){
+    //   this.submitBtn=false
+    // }
     this.getData()
+  }
+  ngDoCheck(){
+    console.log(".>>>",this.dataPassingService.id);
+    if(this.dataPassingService.id){
+     
+      
+      this.submitBtn=false
+    }else{
+      this.submitBtn=true
+    }
   }
   getData(){
 this.userFormData=this.fb.group({
-  firstName:[this.editData?this.editData[0]?.firstName: '',[Validators.required]],
-  lastName:[this.editData?this.editData[0]?.lastName:'',[Validators.required]],
+  name:[this.editData?this.editData[0]?.name: '',[Validators.required]],
+  username:[this.editData?this.editData[0]?.username:'',[Validators.required]],
   email:[this.editData?this.editData[0]?.email:'',[Validators.required]],
-  address:[this.editData?this.editData[0]?.address.street+","+this.editData[0]?.address.suite+","+this.editData[0]?.address.city+","+this.editData[0]?.address.zipcode:'',[Validators.required]],
-
+  // address:[this.editData?this.editData[0]?.address.street+","+this.editData[0]?.address.suite+","+this.editData[0]?.address.city+","+this.editData[0]?.address.zipcode:'',[Validators.required]],
+  address: this.fb.group({
+    street: [this.editData?this.editData[0]?.address.street:''],
+    suite: [this.editData?this.editData[0]?.address.suite:''],
+    city: [this.editData?this.editData[0]?.address.city:''],
+    zipcode: [this.editData?this.editData[0]?.address.zipcode:''],
+    // geo: this.fb.group({
+    //   lat: ['', Validators.required],
+    //   lng: ['', Validators.required]
+    // })
 })
   }
+)}
+
   submit(){
     this.dataPassingService.postApiCall(this.endPoint,this.userFormData.value).subscribe(res=>{
       alert('Data Submitted Successfully')
@@ -48,8 +70,9 @@ this.userFormData=this.fb.group({
     })
   }
   ngOnDestroy(){
-    this.dataPassingService.updateBtn=false
+    this.dataPassingService.submitBtn=true
     this.dataPassingService.editData=[]
+    this.dataPassingService.id=''
     // this.editId=[]
   }
 

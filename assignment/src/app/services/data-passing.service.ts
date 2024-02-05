@@ -7,7 +7,7 @@ export class DataPassingService {
  url='  http://localhost:3000/'
  editData:any
  id:any
- updateBtn!:boolean;
+ submitBtn!:boolean;
   constructor(private http:HttpClient) { }
   postApiCall(endPoint:any,data:any){
     let url=this.url+endPoint
@@ -20,5 +20,9 @@ export class DataPassingService {
   patchApiCall(endPoint:any,id:any,data:any){
     let url=this.url+endPoint+"/"+id
     return this.http.patch(url,data)
+  }
+  deleteApiCall(endPoint:any,id:any){
+    let url=this.url+endPoint+"/"+id
+    return this.http.delete(url)
   }
 }

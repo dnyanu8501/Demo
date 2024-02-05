@@ -7,13 +7,9 @@
       "email": "Sincere@april.biz",
       "address": {
         "street": "Kulas Light",
-        "suite": "Apt. 556",
+        "suite": "Apt. 555",
         "city": "Gwenborough",
-        "zipcode": "92998-3874",
-        "geo": {
-          "lat": "-37.3159",
-          "lng": "81.1496"
-        }
+        "zipcode": "92998-3874"
       },
       "phone": "1-770-736-8031 x56442",
       "website": "hildegard.org",
@@ -21,6 +17,12 @@
         "name": "Romaguera-Crona",
         "catchPhrase": "Multi-layered client-server neural-net",
         "bs": "harness real-time e-markets"
+      },
+      "address1": {
+        "street": "Kulas Light",
+        "suite": "Apt.222",
+        "city": "Gwenborough",
+        "zipcode": ""
       }
     },
     {
@@ -29,14 +31,10 @@
       "username": "Antonette",
       "email": "Shanna@melissa.tv",
       "address": {
-        "street": "Victor Plains",
-        "suite": "Suite 879",
-        "city": "Wisokyburgh",
-        "zipcode": "90566-7771",
-        "geo": {
-          "lat": "-43.9509",
-          "lng": "-34.4618"
-        }
+        "street": "abc",
+        "suite": "katraj",
+        "city": "pune",
+        "zipcode": "410041"
       },
       "phone": "010-692-6593 x09125",
       "website": "anastasia.net",
@@ -44,6 +42,14 @@
         "name": "Deckow-Crist",
         "catchPhrase": "Proactive didactic contingency",
         "bs": "synergize scalable supply-chains"
+      },
+      "firstName": "Ervin Howell",
+      "lastName": "Antonette",
+      "address1": {
+        "street": "Tilary Road",
+        "suite": "535463",
+        "city": "Chandgad",
+        "zipcode": "416552"
       }
     },
     {
@@ -78,11 +84,7 @@
         "street": "Hoeger Mall",
         "suite": "Apt. 692",
         "city": "South Elvis",
-        "zipcode": "53919-4257",
-        "geo": {
-          "lat": "29.4572",
-          "lng": "-164.2990"
-        }
+        "zipcode": "53919-4257"
       },
       "phone": "493-170-9623 x156",
       "website": "kale.biz",
