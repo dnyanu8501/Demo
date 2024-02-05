@@ -1,0 +1,46 @@
+.main{
+   
+    margin: auto;
+    text-align: center;
+    width: 40%;
+    height: 100%;
+    background-color: rgb(183, 199, 247);
+    padding: 30px;
+    border-radius: 15px;
+}
+input{
+    margin: 8px;
+    width: 90%;
+    padding: 8px;
+    border-radius: 20px;
+}
+label{
+    font-size: 18px;
+    float: left;
+    margin-left: 7%;
+}
+.btn{
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(225, 142, 41);
+    border: 2px solid;
+    
+}
+h2{
+    margin: auto;
+    text-align: center;
+}
+.container{
+  padding-top: 2%;  
+}
+.err{
+    color: red;
+}
+.backBtn{
+    float: left;
+    border-radius: 15px;
+    background-color: rgb(1, 1, 1);
+    color: white;
+}
