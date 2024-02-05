@@ -12,7 +12,7 @@ import { DataPassingService } from 'src/app/services/data-passing.service';
 export class UserFormComponent {
   endPoint='user'
   userFormData!:FormGroup
-  address1!:FormGroup
+  // address1!:FormGroup
   editId:any
   editData:any
   submitBtn:any=true
@@ -41,16 +41,12 @@ this.userFormData=this.fb.group({
   name:[this.editData?this.editData[0]?.name: '',[Validators.required]],
   username:[this.editData?this.editData[0]?.username:'',[Validators.required]],
   email:[this.editData?this.editData[0]?.email:'',[Validators.required]],
-  // address:[this.editData?this.editData[0]?.address.street+","+this.editData[0]?.address.suite+","+this.editData[0]?.address.city+","+this.editData[0]?.address.zipcode:'',[Validators.required]],
-  address: this.fb.group({
+ address: this.fb.group({
     street: [this.editData?this.editData[0]?.address.street:''],
     suite: [this.editData?this.editData[0]?.address.suite:''],
     city: [this.editData?this.editData[0]?.address.city:''],
     zipcode: [this.editData?this.editData[0]?.address.zipcode:''],
-    // geo: this.fb.group({
-    //   lat: ['', Validators.required],
-    //   lng: ['', Validators.required]
-    // })
+   
 })
   }
 )}
@@ -76,7 +72,7 @@ emptydata(){
     this.dataPassingService.submitBtn=true
     this.dataPassingService.editData=[]
     this.dataPassingService.id=''
-    // this.editId=[]
+
   }
 
 }

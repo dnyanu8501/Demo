@@ -33,7 +33,7 @@
     
       <input  class="add" type="text" formControlName="zipcode" placeholder="Enter zipcode">
       <br>
-      <!-- <span class="err" *ngIf="this.userFormData.get('address')?.errors?.['required'] && this.userFormData.get('address')?.touched">Required Address</span> -->
+    
       <br>
       
       <button class="btn" *ngIf="submitBtn" [disabled]="!this.userFormData.valid">SUBMIT</button>
@@ -42,6 +42,6 @@
     </form>
     </div>
 </div>
-<!-- (click)="this.userFormData.valid ? submit(): 'emptydata()'" -->
+
 
 
