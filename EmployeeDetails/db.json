@@ -1,0 +1,161 @@
+{
+  "user": [
+    {
+      "fname": "Dnyaneshwar",
+      "lname": "Gavade",
+      "email": "gnyaneshwar163@gmail.com",
+      "dob": "2001-10-03",
+      "gender": "male",
+      "education": "Diploma",
+      "company": "Lean Data Techn. Pvt Ltd",
+      "exp": 2,
+      "package": 350000,
+      "id": 1
+    },
+    {
+      "fname": "ram",
+      "lname": "janakr",
+      "email": "ram12@gmail.com",
+      "dob": "2002-02-23",
+      "gender": "male",
+      "education": "Graduate",
+      "company": "TCS",
+      "exp": 1,
+      "package": 250000,
+      "id": 2
+    },
+    {
+      "fname": "shradha",
+      "lname": "kupekar",
+      "email": "shradha11@gmail.com",
+      "dob": "2002-04-04",
+      "gender": "female",
+      "education": "Graduate",
+      "company": "Accenture",
+      "exp": 3,
+      "package": 500000,
+      "id": 3
+    },
+    {
+      "fname": "vishal",
+      "lname": "mhalotra",
+      "email": "vishal123@gmail.com",
+      "dob": "1995-03-04",
+      "gender": "male",
+      "education": "Post_Graduate",
+      "company": "ABC",
+      "exp": 3,
+      "package": 460000,
+      "id": 4
+    },
+    {
+      "fname": "saloni",
+      "lname": "kupekar",
+      "email": "saloni@gmail.com",
+      "dob": "2005-03-04",
+      "gender": "female",
+      "education": "Graduate",
+      "company": "ABC",
+      "exp": 2,
+      "package": 400000,
+      "id": 5
+    },
+    {
+      "fname": "shourya",
+      "lname": "Tejam",
+      "email": "shourya11@gmail.com",
+      "dob": "2008-03-04",
+      "gender": "male",
+      "education": "Graduate",
+      "company": "ABC",
+      "exp": 3,
+      "package": 460000,
+      "id": 6
+    },
+    {
+      "fname": "Diksha",
+      "lname": "Desai",
+      "email": "diksha54@gmail.com",
+      "dob": "1999-03-14",
+      "gender": "female",
+      "education": "Diploma",
+      "company": "TCS",
+      "exp": 2.6,
+      "package": 370000,
+      "id": 7
+    },
+    {
+      "fname": "Nilesh",
+      "lname": "Shinde",
+      "email": "nilesh54@gmail.com",
+      "dob": "1992-11-12",
+      "gender": "male",
+      "education": "Post_Graduate",
+      "company": "ABC",
+      "exp": 5,
+      "package": 700000,
+      "id": 8
+    },
+    {
+      "fname": "vishal",
+      "lname": "mhalotra",
+      "email": "vishal123@gmail.com",
+      "dob": "1995-03-04",
+      "gender": "male",
+      "education": "Post_Graduate",
+      "company": "ABC",
+      "exp": 3,
+      "package": 460000,
+      "id": 9
+    },
+    {
+      "fname": "Riya",
+      "lname": "Patil",
+      "email": "riya674@gmail.com",
+      "dob": "2005-03-04",
+      "gender": "female",
+      "education": "Graduate",
+      "company": "Wipro",
+      "exp": 2,
+      "package": 400000,
+      "id": 10
+    },
+    {
+      "fname": "Rohit",
+      "lname": "Shimpi",
+      "email": "rohit54@gmail.com",
+      "dob": "2004-11-04",
+      "gender": "male",
+      "education": "Graduate",
+      "company": "Wipro",
+      "exp": 2.6,
+      "package": 400000,
+      "id": 11
+    },
+    {
+      "fname": "Swara",
+      "lname": "Gavade",
+      "email": "swara32@gmail.com",
+      "dob": "2002-03-08",
+      "gender": "female",
+      "education": "Graduate",
+      "company": "Capgemini",
+      "exp": 3,
+      "package": 470000,
+      "id": 12
+    },
+    {
+      "fname": "aakash",
+      "lname": "Patil",
+      "email": "akash@gmail.com",
+      "dob": "2008-03-12",
+      "gender": "male",
+      "education": "Graduate",
+      "company": "SparkLab",
+      "exp": 2,
+      "package": 400000,
+      "id": 13
+    }
+  
+  ]
+}
