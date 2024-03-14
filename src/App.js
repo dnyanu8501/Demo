@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Topnav from './Components/Topnav';
+
+import WeddingPhotos from './Components/WeddingPhotos';
+import {BrowserRouter,Route,Routes} from 'react-router-dom';
+import WeddingVideo from './Components/WeddingVideo';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <BrowserRouter>
+    <Topnav></Topnav>
+    <Routes>
+      <Route path='' element={<WeddingPhotos/>}></Route>
+      <Route path='/weddingVedio' element={<WeddingVideo></WeddingVideo>}></Route>
+    </Routes>
+    
+   
+    </BrowserRouter>
+    </>
   );
 }
 

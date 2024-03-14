@@ -1,38 +1,37 @@
-.App {
+.exploreBtn{
+  margin: auto;
   text-align: center;
+  margin-left: 46%;
+}
+.pb-video-container {
+  padding-top: 20px;
+  background: #bdc3c7;
+  font-family: Lato;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pb-video {
+  border: 1px solid #e6e6e6;
+  padding: 5px;
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .pb-video:hover {
+      background: #3c4955;
   }
+
+iframe {
+  transition: width 2s, height 2s;
+  border-radius: 20px;
+ 
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+ 
 
-.App-link {
-  color: #61dafb;
+.pb-row {
+  margin-bottom: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weddingBackground{
+ 
+  background-image: linear-gradient(rgb(217, 247, 108),rgb(244, 189, 86));
 }
